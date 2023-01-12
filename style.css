@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+@font-face {
+  font-family: get_schwifty;
+  src: url(./font/get_schwifty.ttf);
+}
+
+body {
+  background-image: URL(img/dimension.jpg);
+  background-size: cover;
+  background-color: #38f399b1;
+}
+
+h1 {
+  font-family: get_schwifty;
+  color: blueviolet;
+  text-align: center;
+  font-size: 85px;
+  letter-spacing: 10px;
+  padding: 25px;
+  margin: 20px;
+  text-shadow: -4px -4px 4px #35f823b1, 3px 3px 3px #232b27b1,
+    -3px 3px 3px #232b27b1, 3px -3px 3px #232b27b1;
+}
+h2 {
+  font-family: 'Zen Dots', cursive;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(173, 107, 235);
+  letter-spacing: 5px;
+}
+.card {
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.character-img {
+  width: 200px;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+.box{
+    
+font-family: 'Zen Dots', cursive;
+color: black;
+background-color: bisque;
+width: 220px;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 8px 8px 8px 10px violet;
+}
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  font-family: 'Zen Dots', cursive;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(144, 215, 218);
+  letter-spacing: 1px;
+}
+.arrow-icon{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height:50px ;
+}
+@media (max-width: 880px){
+  .card{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px){
+  .card{
+      grid-template-columns: 1fr ;
+  }
+}
